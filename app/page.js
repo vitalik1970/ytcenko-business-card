@@ -1,15 +1,10 @@
-"use client"
-import { useState } from 'react';
+import Photosite from "@/app/photosite";
 import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() { 
 
-  const [siteTravel, setSiteTravel] = useState(false);
-
-  const siteTravelClick = () => {
-    setSiteTravel(!siteTravel);
-  }
+  
   return (
     <div className={styles.page}>
      <nav className={styles.nav}>
@@ -47,60 +42,13 @@ export default function Home() {
         <a href="mailto:ytcenko1970@gmail.com"> ytcenko1970@gmail.com</a>
         </div>
      </nav>
-     
+     <Photosite/>
 
-     <div className={styles.mainpage__site}>
-     <div onClick={siteTravelClick} className={styles.travel__site}> 
-        <Image
-      className={styles.example__site}
-          src="/travel.png"
-          alt="имс"
-          width={450}
-          height={230}
-         
-        />
-        {siteTravel ? 'Образец сайта путешественника' : ''}
-        </div>
-
-<Image
-      className={styles.example__site}
-          src="/photosite.png"
-          alt="имс"
-          width={450}
-          height={230}
-         
-        />
-        <Image
-      className={styles.example__site}
-       src="/Alex1.png"
-          alt="имс"
-          width={450}
-          height={230}
-         
-        />
-        <Image
-      className={styles.example__site}
-          src="/photosite.png"
-          alt="имс"
-          width={450}
-          height={230}
-         
-        />
-        
-        </div>
 
         <div className={styles.main_content}>
       <main className={styles.main}>
         Согласно международного права каждый человек имеет право на владение собственным сайтом,созданным в фрейворке NEXT.js! 
-        {/* <div  className={styles.logo_next}>
-        <Image
-         
-          src="/next.png"
-          alt="next.js logo"
-          width={40}
-          height={20}
-           
-        /></div>  */}
+
         <br/>
         Для чего тебе это нужно?
         <ol>
@@ -113,40 +61,6 @@ export default function Home() {
           <li>Использовать как сайт-визитку, подробно описав свои услуги и контакты.  </li>
           <li>Иметь возможность <b>поздравить</b> близкого человека, с помощью его личного <b>сайта-открытки!</b>  </li>
         </ol>
-
-        {/* <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div> */}
-        {/* <svg  className={styles.circle} viewBox="0 0 100 100">
-  <path id="circle" d="M 0,50 a 50,50 0 1,1 0,1 z" />
-  <text>
-    <textPath  href="#circle">
-      Делаем текст по кругу
-    </textPath>
-  </text>
-</svg> */}
       </main>
       </div>
       <div className={styles.social}>

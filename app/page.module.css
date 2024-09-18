@@ -35,17 +35,7 @@
   font-family: var(--font-geist-sans);
   height: 100%;
 }
-/* .circle {
-  display: block;
-  overflow: visible;
-  width: 100px;
-  font-size: 28px;
-  fill: red;
-}
 
-.circle path {
-    fill: none;
-} */
 .main {
   margin-top: 10px;
   /* display: flex; */
@@ -220,12 +210,18 @@ a.secondary {
     grid-column-start: 1;
   }
   .example {
-    /* padding-right: 10px; */
+    font-family: "Kingthings Petrock", sans-serif;
    padding: 14px 10px;
     background-color:rgb(249 250 251);
     border-radius: 8px;
     text-align: center;
+    font-size: 24px;
     margin-bottom: 10px;
+    color: #747474;
+    cursor: pointer;
+  }
+  .example:hover {
+     color: #C6A57A;
   }
   .nav__footer {
     font-family: "Caveat", cursive;
@@ -242,6 +238,9 @@ a.secondary {
     border-bottom-right-radius: 10px;
     /* background-color: #C6A57A; */
   }
+  .nav__footer:hover {
+    color: #C6A57A; 
+  }  
   .example__site {
     grid-column-start: 2;
     border-radius: 8px;
@@ -264,7 +263,7 @@ a.secondary {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     /* height: 100vh; */
   /* background: url('/background.png') no-repeat center center; */
   background-size: cover;
@@ -278,17 +277,37 @@ a.secondary {
     overflow-y: auto;
   }
   .social {
-   margin-top: 10px; 
-    background-color: rgb(47 111 235);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    gap: 30px;
+  
+   background-color: rgb(47 111 235);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   align-content: center;
+   gap: 30px;
   }
   /* 095 290 81 12 мирина виктор */
   .main_content{
     max-width: 600px;
     margin: 70px auto;
+  }
+  .travel__site {
+    position: relative;
+  }
+  .photosite__site {
+    position: relative;
+  }
+  .alex__site {
+    position: relative;
+  }
+  .svyt__site {
+    position: relative;
+  }
+  .site_activ {
+  position: absolute;
+  font-family: "Kingthings Petrock", sans-serif;
+  left: 30%;
+  bottom: 20px;
+  color: #fff;
+  font-size: 18px;
   }
