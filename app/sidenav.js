@@ -1,7 +1,7 @@
 import styles from "./page.module.css";
 import Navlinks from "@/app/nav-links";
 
-export default function Home() { 
+export default function Sidenav() { 
 
   return (  
      <nav className={styles.nav}>
