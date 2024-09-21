@@ -13,7 +13,7 @@ const links = [
   {name: 'Сайт в подарок', href: '/dashboard/present' },
   {name: 'Блог', href: '/dashboard/blog' },
   {name: 'Оставить заявку', href: '/dashboard/bid'},
-  {name: '+38 (095) 394 51 57', href: 'tel:+380953945157' },
+  {name: '+38 (095) 394 51 57', href: '/dashboard/tel'  },
 ];
 
 export default function NavLinks() {

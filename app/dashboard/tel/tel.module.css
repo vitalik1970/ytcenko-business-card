@@ -2,7 +2,7 @@
 @import url('/fonts/PTSans-Regular.ttf');
 @import url('/fonts/Caveat-VariableFont_wght.ttf');
 
-.prices_container{
+.tel_container{
      padding-top: 200px;
     max-width: 600px;
     margin: 0px auto 0px;
@@ -16,18 +16,18 @@ font-family: "Sofia Sans Extra Condensed", sans-serif;
     overflow-x: visible; 
     overflow-y: auto;
 }
-.prices_container h1{
+.tel_container h3{
     display: block;
    text-align: center;
  
    
    font-family: "Sofia Sans Extra Condensed", sans-serif!important;
-   font-size: 30px;
+   font-size: 33px;
      letter-spacing: 1.1px;
      font-weight: 700;
     
  }
- .prices_container a {
+ .tel_container a {
     /* margin-left: 5px; */
      display: inline-block;
     color: rgb(47 111 235);
@@ -35,4 +35,3 @@ font-family: "Sofia Sans Extra Condensed", sans-serif;
 
   
   }
- /* 0965871841 валя соль */

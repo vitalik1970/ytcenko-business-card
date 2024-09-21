@@ -1,4 +1,4 @@
-// import Photosite from "@/app/photosite";
+
 import Image from "next/image";
 import styles from "./page.module.css";
 
