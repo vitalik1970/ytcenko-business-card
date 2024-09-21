@@ -3,6 +3,8 @@ import styles from "./page.module.css";
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
+
+
 const links = [
   { name: 'Home', href: '/' },
   {name: 'Резюме', href: '/dashboard/resume'},
@@ -20,13 +22,13 @@ export default function NavLinks() {
 
      <div  className={styles.examples}>
       {links.map((link) => {
-       
+       const isActive = pathname === link.href;
         return (
           <Link
             key={link.name}
-            href={link.href} 
+            href={link.href}  
           > 
-            <p className={styles.example}>{link.name}</p>
+            <p  className={`${styles.example} ${isActive ? styles.active : ''}`}>{link.name}</p>
           </Link>
         );
       })}

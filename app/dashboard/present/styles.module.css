@@ -1,5 +1,5 @@
 .present{
-    width: 600px;
+    max-width: 650px;
     margin: auto auto;
  }
  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Great+Vibes&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
@@ -9,7 +9,7 @@
   font-weight: weight;
   font-style: normal;
 }
- .present h3{
+ .present h1{
     display: block;
    text-align: center;
   

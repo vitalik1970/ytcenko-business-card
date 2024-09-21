@@ -39,34 +39,47 @@
 }
 
 .main {
-  /* margin-top: 10px; */
-  flex-direction: column;
-  gap: 32px;
-   align-items: center;
-  justify-items: center; 
-  grid-column-start: 3;
+  padding: 20px 10px;
+  max-width: 650px;
   font-family: "Sofia Sans Extra Condensed", sans-serif;
-  font-size: 33px;
-    letter-spacing: 1.1px;
-    font-weight: 700;
-    
+  font-size: 30px;
+    /* letter-spacing: 1.1px; */
+    font-weight: 600;
+    color: #383636;
+}
+.main p {
+    text-align: center;
+    line-height:28px;
 }
 
+.main_content{
+  margin: 0 auto;
+  max-width: 665px;
+}
+
+.main h1{
+text-align: center;
+font-size: 45px;
+}
 
 .main ol {
   margin: 20px 0 0 7px;
   font-family: var(--font-geist-mono);
   padding-left: 0;
- 
-  font-size: 27px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  list-style-position: inside;
+  
 
 }
+.main li {
+  font-weight: 500;
+  font-size: 26px;
+  line-height:28px;
+  letter-spacing: -0.01em;
+  list-style-position: inside;
+}  
 
 .main li:not(:last-of-type) {
   margin-bottom: 10px;
+  
 }
 
 /* .main code {
@@ -221,6 +234,10 @@ a.secondary {
   .example:hover {
      color: #C6A57A;
   }
+  .active {
+  
+    color: #C6A57A; 
+  }
   .nav__footer {
     font-family: "Caveat", cursive;
     font-size: 25px;
@@ -285,10 +302,7 @@ a.secondary {
    gap: 30px;
   }
   /* 095 290 81 12 мирина виктор */
-  .main_content{
-    max-width: 600px;
-    margin: 70px auto;
-  }
+  
   .travel__site {
     position: relative;
     /* cursor: pointer; */

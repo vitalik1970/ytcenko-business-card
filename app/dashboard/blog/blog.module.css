@@ -9,9 +9,9 @@
 @import url('/public/fonts/Caveat-VariableFont_wght.ttf');
 
 .blog_container {
-     padding-top: 20px;
-    width: 600px;
-    margin: 0px auto 0px;
+     padding: 20px 5px;
+    max-width: 650px;
+    margin: 0px auto;
     background-attachment: fixed;  /* Параллакс-эффект */
   position: relative;
 font-size: 22px;
@@ -23,13 +23,13 @@ font-weight: 400;
     overflow-x: visible; 
     overflow-y: auto;
 }
-.blog_container h3{
+.blog_container h1{
     display: block;
    text-align: center;
  
    
    font-family: "Sofia Sans Extra Condensed", sans-serif!important;
-   font-size: 33px;
+   font-size: 34px;
      letter-spacing: 1.1px;
      font-weight: 700;
     

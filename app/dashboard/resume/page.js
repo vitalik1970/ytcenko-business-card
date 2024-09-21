@@ -6,7 +6,7 @@ export default function Resume() {
   return (
       
         <div className={styles.resume}>
-           
+            <h1>Сайты на любой вкус!</h1>
            
            < Image
     //   className={styles.github}
