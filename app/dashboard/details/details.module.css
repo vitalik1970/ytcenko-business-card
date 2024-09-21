@@ -1,0 +1,59 @@
+@import url('/fonts/SofiaSansExtraCondensed-SemiBold.ttf');
+.sofia-sans-extra-condensed  {
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+@import url('/fonts/PTSans-Regular.ttf');
+@import url('/public/fonts/Caveat-VariableFont_wght.ttf');
+
+.details_container {
+     padding: 20px 10px;
+    width: 650px;
+    margin: 0px auto ;
+    background-attachment: fixed;  /* Параллакс-эффект */
+  position: relative;
+font-size: 22px;
+font-family: "PT Sans", sans-serif;
+font-weight: 500;
+/* font-style: italic;  */
+   perspective: 1px;
+    height: 100vh;
+    overflow-x: visible; 
+    overflow-y: auto;
+}
+.details_container h2{
+    display: block;
+   text-align: center;
+ font-style: italic; 
+   
+   font-family: "Sofia Sans Extra Condensed", sans-serif!important;
+   font-size: 33px;
+     letter-spacing: 1.1px;
+     font-weight: 500;
+    
+ }
+ .details_container_p {
+    font-style: italic; 
+    margin-bottom: 7px;
+    text-align: center;
+ }
+ .details_container p{
+    margin-bottom: 9px;
+ }
+ .nav__hader {
+    font-family: "Caveat", cursive;
+    font-size: 43px;
+    font-weight: 700;
+    /* height: 70px; */
+    background-color: rgb(47 111 235);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 1px 30px;
+    border: 50%;
+    border-radius: 50%;
+    width: 1px;
+   }

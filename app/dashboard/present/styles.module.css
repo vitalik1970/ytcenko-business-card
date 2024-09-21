@@ -1,0 +1,53 @@
+.present{
+    width: 600px;
+    margin: auto auto;
+ }
+ @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Great+Vibes&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
+.sofia-sans-extra-condensed  {
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+ .present h3{
+    display: block;
+   text-align: center;
+  
+   
+   font-family: "Sofia Sans Extra Condensed", sans-serif;
+   font-size: 30px;
+     letter-spacing: 1.1px;
+     font-weight: 700;
+    
+ }
+ .present p {
+ margin: 10px 0 0 7px;
+ font-family: "Sofia Sans Extra Condensed", sans-serif;
+ font-size: 27px;
+   /* letter-spacing: 1.1px; */
+   font-weight: 600;
+   line-height: 24px;
+ }
+ .present  ol {
+    margin: 10px 0 0 7px;
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+    padding-left: 0;
+   
+    font-size: 27px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    list-style-position: inside;
+  
+  }
+  
+  .present li:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+  .present a {
+    margin-left: 5px;
+     display: inline-block;
+    color: rgb(47 111 235);
+    text-decoration: underline;
+
+  
+  } 

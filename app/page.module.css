@@ -5,12 +5,12 @@
   font-weight: weight;
   font-style: normal;
 }
-@import url('/20282.ttf');
+@import url('/fonts/Kingthings_Petrock.ttf');
 .kingthings {
   font-family: "Kingthings Petrock", sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Great+Vibes&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url('/public/fonts/Caveat-VariableFont_wght.ttf');
 
 .caveat {
   font-family: "Caveat", cursive;
@@ -26,7 +26,9 @@
 .page {
   display: grid;
   grid-template-rows:  1fr ;
-  grid-template-columns: 250px  450px 1fr 50px;
+  grid-template-columns: 5fr 9fr 14fr 1fr;
+  /* grid-template-columns: minmax(150px, 250px) minmax(300px, 450px) 1fr 50px; */
+
   /* align-items: center; */
   /* justify-items: center; */
   /* min-height: 100svh; */
@@ -37,21 +39,17 @@
 }
 
 .main {
-  margin-top: 10px;
-  /* display: flex; */
+  /* margin-top: 10px; */
   flex-direction: column;
   gap: 32px;
    align-items: center;
   justify-items: center; 
-  /* grid-row-start: 2; */
   grid-column-start: 3;
   font-family: "Sofia Sans Extra Condensed", sans-serif;
-  /* font-family: "Caveat", cursive; */
-  /* font-family: "Great Vibes", cursive; */
   font-size: 33px;
-    /* font-style: italic; */
     letter-spacing: 1.1px;
     font-weight: 700;
+    
 }
 
 
@@ -60,7 +58,7 @@
   font-family: var(--font-geist-mono);
   padding-left: 0;
  
-  font-size: 18px;
+  font-size: 27px;
   line-height: 24px;
   letter-spacing: -0.01em;
   list-style-position: inside;
@@ -68,16 +66,16 @@
 }
 
 .main li:not(:last-of-type) {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
-.main code {
+/* .main code {
   font-family: inherit;
   background: var(--gray-alpha-100);
   padding: 2px 4px;
   border-radius: 4px;
   font-weight: 600;
-}
+} */
 
 /* .ctas {
   display: flex;
@@ -199,7 +197,7 @@ a.secondary {
     justify-content: center;
     color: #fff;
     /* margin-left: 10px; */
-    margin-top: 10px;
+    /* margin-top: 10px; */
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
   }
@@ -211,7 +209,7 @@ a.secondary {
   }
   .example {
     font-family: "Kingthings Petrock", sans-serif;
-   padding: 14px 10px;
+   padding: 13px 10px;
     background-color:rgb(249 250 251);
     border-radius: 8px;
     text-align: center;
@@ -260,7 +258,7 @@ a.secondary {
     margin-right: 5px;
   }
   .mainpage__site {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -293,6 +291,7 @@ a.secondary {
   }
   .travel__site {
     position: relative;
+    /* cursor: pointer; */
   }
   .photosite__site {
     position: relative;
@@ -303,6 +302,10 @@ a.secondary {
   .svyt__site {
     position: relative;
   }
+  .heppi__site {
+    position: relative;
+  }
+
   .site_activ {
   position: absolute;
   font-family: "Kingthings Petrock", sans-serif;
@@ -311,3 +314,8 @@ a.secondary {
   color: #fff;
   font-size: 18px;
   }
+  .resume {
+    max-width: 500px;
+    height: 500px;
+    background-color: bisque;
+}

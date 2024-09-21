@@ -1,6 +1,6 @@
 "use client"
 import { useState } from 'react';
-import Image from "next/image";
+// import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() { 
@@ -21,48 +21,80 @@ export default function Home() {
      <div className={styles.mainpage__site}>
 
      <div onClick={() => handleClick('siteTravel')} className={styles.travel__site}> 
-        <Image
-      className={styles.example__site}
-          src="/travel.png"
-          alt="имс"
-          width={450}
-          height={220}
-         
-        />
+       
+         <div   className={styles.example__site}
+      style={{
+        backgroundImage: `url('/travel.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center',
+        maxWidth: '450px',
+        height: '220px',
+      }}
+    >
+      
+    </div>
        <p className={styles.site_activ}>{activeSites.siteTravel ? 'Образец сайта путешественника' : ''}</p> 
 
         </div>
 <div  onClick={() => handleClick('sitePhoto')} className={styles.photosite__site}>
-<Image
-      className={styles.example__site}
-          src="/photosite.png"
-          alt="имс"
-          width={450}
-          height={220}
-         
-        />
+<div   className={styles.example__site}
+      style={{
+        backgroundImage: `url('/photosite.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center',
+        maxWidth: '450px',
+        height: '220px',
+      }}
+    >
+      
+    </div>
+
  <p className={styles.site_activ}>{activeSites.sitePhoto ? 'Образец сайта фотографа' : ''}</p> 
         </div>
         <div onClick={() => handleClick('siteAlex')} className={styles.alex__site}> 
-        <Image
-      className={styles.example__site}
-       src="/Alex1.png"
-          alt="имс"
-          width={450}
-          height={220}
-         
-        />
+        <div className={styles.example__site}
+      style={{
+        backgroundImage: `url("/Alex1.jpg")`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center',
+        maxWidth: '450px',
+        height: '220px',
+      }}
+    >
+      
+    </div>
+       
          <p className={styles.site_activ}>{activeSites.siteAlex ? 'Образец сайта разработчика сайтов' : ''}</p> 
         </div>
-        <div onClick={() => handleClick('siteSvyt')} className={styles.svyt__site}> 
-        <Image
-      className={styles.example__site}
-          src="/svyt.png"
-          alt="имс"
-          width={450}
-          height={220}
-          
-        /> <p className={styles.site_activ}>{activeSites.siteSvyt ? 'Образец сайта города' : ''}</p> 
+        
+        {/* <a onClick={() => handleClick('siteSvyt')} className={styles.svyt__site}>  */}
+        <a href='https://svytogorsk.online'  className={styles.svyt__site}>
+      
+          <div className={styles.example__site}
+      style={{
+        backgroundImage: `url("/svyt.jpg")`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center',
+        maxWidth: '450px',
+        height: '220px',
+      }}
+    >
+      
+    </div>
+        {/* <p className={styles.site_activ}>{activeSites.siteSvyt ? 'Образец сайта города' : ''}</p>  */}
+        </a>
+
+        <div onClick={() => handleClick('siteHeppi')} className={styles.heppi__site}>
+        <div className={styles.example__site} 
+      style={{
+        backgroundImage: `url("/heppi.jpg")`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center',
+       maxWidth: '450px',
+        height: '220px',
+      }}>
+        <p className={styles.site_activ}>{activeSites.siteHeppi ? 'Образец сайта поздравления' : ''}</p> 
+        </div>
         </div>
         
         </div> 
