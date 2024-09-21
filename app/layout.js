@@ -1,5 +1,5 @@
 import Sidenav from '@/app/Sidenav';
-import Photosite from "@/app/photosite";
+import Photosite from "@/app/Photosite";
 import Social from "@/app/Social";
 import "./globals.css";
 import styles from "./page.module.css";
