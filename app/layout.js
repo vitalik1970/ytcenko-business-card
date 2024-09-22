@@ -14,7 +14,7 @@ import styles from "./page.module.css";
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="ru">
        {/* <head>
         <link rel="icon" href="/icons/favicon.png" sizes="any" type="image/x-icon" />
       </head> */}
