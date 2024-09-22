@@ -12,6 +12,7 @@ export default function Sidenav() {
         <div className={styles.nav__footer}>
         <a href="mailto:ytcenko1970@gmail.com">ytcenko1970@gmail.com</a>
         </div>
+        
      </nav> 
   );
 }

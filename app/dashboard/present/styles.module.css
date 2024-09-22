@@ -1,6 +1,10 @@
 .present{
     max-width: 650px;
     margin: auto auto;
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: visible; 
+    overflow-y: auto;
  }
  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Great+Vibes&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
 .sofia-sans-extra-condensed  {

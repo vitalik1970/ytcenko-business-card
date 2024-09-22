@@ -39,13 +39,17 @@
 }
 
 .main {
-  padding: 20px 10px;
+  padding: 15px 10px;
   max-width: 650px;
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   font-size: 30px;
     /* letter-spacing: 1.1px; */
     font-weight: 600;
     color: #383636;
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: visible; 
+    overflow-y: auto;
 }
 .main p {
     text-align: center;
@@ -63,11 +67,9 @@ font-size: 45px;
 }
 
 .main ol {
-  margin: 20px 0 0 7px;
+  margin: 15px 0 0 7px;
   font-family: var(--font-geist-mono);
   padding-left: 0;
-  
-
 }
 .main li {
   font-weight: 500;

@@ -3,7 +3,7 @@
 @import url('/fonts/Caveat-VariableFont_wght.ttf');
 
 .tel_container{
-     padding-top: 200px;
+    padding: 200px 20px;
     max-width: 600px;
     margin: 0px auto 0px;
     background-attachment: fixed;  /* Параллакс-эффект */
