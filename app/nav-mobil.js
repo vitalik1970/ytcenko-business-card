@@ -16,12 +16,12 @@ const links = [
   {name: '+38 (095) 394 51 57', href: '/dashboard/tel'  },
 ];
 
-export default function NavLinks( props ) {
+export default function NavLinks( isOpen ) {
   const pathname = usePathname();
-  
+  console.log(isOpen, 'isOpen');
   return (
 
-    <div className={props.isOpen  ? styles.showMenu  : styles.examples }>
+    <div className={styles.examples_mobil} style={{ display: isOpen ? 'block' :  'none'}}>
       {links.map((link) => {
        const isActive = pathname === link.href;
         return (
@@ -29,7 +29,7 @@ export default function NavLinks( props ) {
             key={link.name}
             href={link.href}  
           > 
-            <p onClick={props.toggleMenu} className={`${styles.example} ${isActive ? styles.active : ''}`}>{link.name}</p>
+            <p  className={`${styles.example} ${isActive ? styles.active : ''}`}>{link.name}</p>
           </Link>
         );
       })}

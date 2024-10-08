@@ -6,7 +6,7 @@
   font-style: normal;
 }
 @import url('/fonts/PTSans-Regular.ttf');
-@import url('/public/fonts/Caveat-VariableFont_wght.ttf');
+@import url('/fonts/Caveat-VariableFont_wght.ttf');
 
 .details_container {
      padding: 20px 10px;
@@ -22,38 +22,56 @@ font-weight: 500;
     height: 100vh;
     overflow-x: visible; 
     overflow-y: auto;
+  
+    
 }
 .details_container h1{
     display: block;
    text-align: center;
- font-style: italic; 
+ /* font-style: italic;  */
    
    font-family: "Sofia Sans Extra Condensed", sans-serif!important;
    font-size: 33px;
      letter-spacing: 1.1px;
      font-weight: 500;
-    
+     z-index: -1;
  }
  .details_container_p {
-    font-style: italic; 
+    /* font-style: italic;  */
     margin-bottom: 7px;
     text-align: center;
- }
- .details_container p{
-    margin-bottom: 9px;
+    z-index: -1;
  }
  .nav__hader {
-    font-family: "Caveat", cursive;
-    font-size: 43px;
-    font-weight: 700;
-    /* height: 70px; */
+  padding: 8px;
+  width: 47px;
+  border-radius: 17px;
+  color: #fff;
+  background-color: rgb(47 111 235);
+ 
+ }
+
+   @media  (max-width: 850px) {
+    .details_container {
+     grid-row-start: 2;
+     max-height: 300px;
+     padding: 20px 30px;
+     overflow-y: scroll;  
+     scroll-behavior: smooth;
+     border-left: 2px solid rgb(47 111 235);
+     border-right: 2px solid rgb(47 111 235);
+     /* z-index: -10; */
+  }
+  .details_container::-webkit-scrollbar {
+    width: 8px;             
+  }
+  
+  .details_container::-webkit-scrollbar-thumb {
     background-color: rgb(47 111 235);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    padding: 1px 30px;
-    border: 50%;
-    border-radius: 50%;
-    width: 1px;
-   }
+    border-radius: 20px; 
+  }
+  
+  .details_container::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+  }
+  }

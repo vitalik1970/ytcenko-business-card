@@ -7,8 +7,9 @@ export default function Social() {
   
   return (
    
-     
+
       <div className={styles.social}>
+      
       <a href="https://github.com/vitalik1970?tab=repositories"><Image
       className={styles.github}
           src="/icons/gitHub.svg"
@@ -37,10 +38,12 @@ export default function Social() {
           width={30}
           height={30}
         /></a>
-
-
+          </div>
+        // <div className={styles.social_mail}>
+        // <a href="mailto:ytcenko1970@gmail.com">ytcenko1970@gmail.com</a>
+        // </div>
       
      
-    </div>
+     
   );
 }

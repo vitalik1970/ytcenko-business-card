@@ -1,10 +1,14 @@
 .resume {
-   margin: auto auto;
+  padding: 20px;
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  text-align: center;
+  font-style: italic;
 }
-.main_content{
-    max-width: 600px;
-    margin: 70px auto;
-  }
+.resume h1 {
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+
+  font-style: italic;
+}
   .main {
     margin-top: 10px;
     /* display: flex; */
@@ -14,11 +18,18 @@
     justify-items: center; 
     /* grid-row-start: 2; */
     grid-column-start: 3;
-    font-family: "Sofia Sans Extra Condensed", sans-serif;
+    
     /* font-family: "Caveat", cursive; */
     /* font-family: "Great Vibes", cursive; */
     font-size: 33px;
       /* font-style: italic; */
       letter-spacing: 1.1px;
       font-weight: 700;
+     z-index: -1;
+  }
+  @media  (max-width: 850px) {
+    .resume  {
+     grid-row-start: 2;
+     padding: 0px 20px;
+  }
   }

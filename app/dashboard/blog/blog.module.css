@@ -5,7 +5,7 @@
   font-weight: weight;
   font-style: normal;
 }
-@import url('/fonts/PTSans-Regular.ttf');
+@import url('/public/fonts/PTSans-Regular.ttf');
 @import url('/public/fonts/Caveat-VariableFont_wght.ttf');
 
 .blog_container {
@@ -17,35 +17,41 @@
 font-size: 22px;
 font-family: "PT Sans", sans-serif;
 font-weight: 400;
-/* font-style: italic; */
+font-style: italic;
     perspective: 1px;
     height: 100vh;
     overflow-x: visible; 
     overflow-y: auto;
+    
 }
 .blog_container h1{
-    display: block;
+   
    text-align: center;
  
    
-   font-family: "Sofia Sans Extra Condensed", sans-serif!important;
+   font-family: "PT Sans", sans-serif;
    font-size: 34px;
      letter-spacing: 1.1px;
      font-weight: 700;
     
  }
- .nav__hader {
-  font-family: "Caveat", cursive;
-  font-size: 43px;
-  font-weight: 700;
-  /* height: 70px; */
+ 
+ @media  (max-width: 850px) {
+  .blog_container {
+   grid-row-start: 2;
+   height: 350px;
+   padding: 20px 50px;
+}
+.blog_container::-webkit-scrollbar {
+  width: 8px;            
+}
+
+.blog_container::-webkit-scrollbar-thumb {
   background-color: rgb(47 111 235);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  padding: 1px 30px;
-  border: 50%;
-  border-radius: 50%;
-  width: 1px;
- }
+    border-radius: 20px; 
+}
+
+.blog_container::-webkit-scrollbar-track {
+  background-color: #f1f1f1; 
+}
+}

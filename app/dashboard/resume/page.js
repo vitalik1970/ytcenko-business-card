@@ -8,12 +8,17 @@ export default function Resume() {
         <div className={styles.resume}>
             <h1>Сайты на любой вкус!</h1>
            
-           < Image
-    //   className={styles.github}
-          src="/resume.png"
-          alt="имс"
-          width={600}
-          height={500}
+         
+      <div 
+          style={{
+            backgroundImage: `url('/resume.png')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center center',
+            // width: '100%',      
+            maxWidth: '700px',
+            height: 'auto',    
+            aspectRatio: '7 / 5'
+          }}
         />
 
         </div>

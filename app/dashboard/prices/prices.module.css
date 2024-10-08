@@ -10,11 +10,13 @@
   position: relative;
 font-size: 26px;
 font-family: "Sofia Sans Extra Condensed", sans-serif;
-/* font-style: italic; */
+font-style: italic;
     perspective: 1px;
     height: 100vh;
     overflow-x: visible; 
     overflow-y: auto;
+    z-index: -1;
+   
 }
 .prices_container h1{
     display: block;
@@ -35,4 +37,10 @@ font-family: "Sofia Sans Extra Condensed", sans-serif;
 
   
   }
- /* 0965871841 валя соль */
+  @media  (max-width: 850px) {
+    .prices_container {
+     grid-row-start: 2;
+     padding: 20px 50px;
+     height: inherit;
+  }
+  }

@@ -1,10 +1,15 @@
+@import url('/fonts/SofiaSansExtraCondensed-SemiBold.ttf');
 .present{
     max-width: 650px;
-    margin: auto auto;
+    margin: 35px auto 0;
     perspective: 1px;
     height: 100vh;
+    /* color: #383636; */
+    color: #383636de;
     overflow-x: visible; 
     overflow-y: auto;
+    /* font-style: italic */
+ 
  }
  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Great+Vibes&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
 .sofia-sans-extra-condensed  {
@@ -21,7 +26,7 @@
    font-family: "Sofia Sans Extra Condensed", sans-serif;
    font-size: 30px;
      letter-spacing: 1.1px;
-     font-weight: 700;
+     /* font-weight: 700; */
     
  }
  .present p {
@@ -29,7 +34,7 @@
  font-family: "Sofia Sans Extra Condensed", sans-serif;
  font-size: 27px;
    /* letter-spacing: 1.1px; */
-   font-weight: 600;
+   /* font-weight: 500; */
    line-height: 24px;
  }
  .present  ol {
@@ -55,3 +60,23 @@
 
   
   } 
+ 
+  @media  (max-width: 850px) {
+    .present  {
+     grid-row-start: 2;
+     height: 350px;
+     padding: 20px 45px;
+  }
+  .present::-webkit-scrollbar {
+    width: 8px;            
+  }
+  
+  .present::-webkit-scrollbar-thumb {
+    background-color: rgb(47 111 235);
+    border-radius: 20px;  
+  }
+  
+  .present::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+  }
+  }
