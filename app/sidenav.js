@@ -35,7 +35,7 @@ export default function Sidenav() {
   return (  
      <nav className={styles.nav}>
         <div className={styles.nav__hader}>
-          <h2>Ytcenko.Studio</h2>
+        <a href="/"><h2>Ytcenko.Studio</h2></a> 
         </div>   
         <Navlinks />
         <div className={styles.hamburger_menu}>

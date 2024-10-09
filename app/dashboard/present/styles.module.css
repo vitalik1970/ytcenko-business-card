@@ -1,6 +1,7 @@
-@import url('/fonts/SofiaSansExtraCondensed-SemiBold.ttf');
+/* @import url('/fonts/SofiaSansExtraCondensed-SemiBold.ttf'); */
 .present{
     max-width: 650px;
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
     margin: 35px auto 0;
     perspective: 1px;
     height: 100vh;
@@ -11,19 +12,19 @@
     /* font-style: italic */
  
  }
- @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Great+Vibes&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
+ /* @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Great+Vibes&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
 .sofia-sans-extra-condensed  {
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
-}
+} */
  .present h1{
     display: block;
    text-align: center;
   
    
-   font-family: "Sofia Sans Extra Condensed", sans-serif;
+   
    font-size: 30px;
      letter-spacing: 1.1px;
      /* font-weight: 700; */
@@ -31,7 +32,7 @@
  }
  .present p {
  margin: 10px 0 0 7px;
- font-family: "Sofia Sans Extra Condensed", sans-serif;
+
  font-size: 27px;
    /* letter-spacing: 1.1px; */
    /* font-weight: 500; */
@@ -39,7 +40,7 @@
  }
  .present  ol {
     margin: 10px 0 0 7px;
-    font-family: "Sofia Sans Extra Condensed", sans-serif;
+  
     padding-left: 0;
    
     font-size: 27px;
@@ -65,8 +66,13 @@
     .present  {
      grid-row-start: 2;
      height: 350px;
-     padding: 20px 45px;
+     padding: 20px 10px;
+     margin: 0 auto;
+     max-width: 665px;
+     border-left: 2px solid rgb(47 111 235);
+     border-right: 2px solid rgb(47 111 235);
   }
+
   .present::-webkit-scrollbar {
     width: 8px;            
   }
@@ -80,3 +86,9 @@
     background-color: #f1f1f1; 
   }
   }
+  @media (max-width: 700px) {
+    .present {
+      padding: 20px 5px; 
+      margin: 0 10px;
+      }
+    } 

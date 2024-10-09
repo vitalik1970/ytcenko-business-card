@@ -24,7 +24,7 @@ export default function Photosite() {
 
   return (
    <>
-      <div className={styles.mainpage__site}>
+      <div className={`${styles.mainpage__site} scrollable-block`}> 
   
         <div onClick={() => handleClick('siteTravel')} className={styles.travel__site}>
           <div

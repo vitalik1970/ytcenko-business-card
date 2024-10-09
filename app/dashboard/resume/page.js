@@ -4,8 +4,7 @@ import styles from './styles.module.css';
 export default function Resume() { 
 
   return (
-      
-        <div className={styles.resume}>
+    <div className={`${styles.resume} scrollable-block`}>
             <h1>Сайты на любой вкус!</h1>
            
          

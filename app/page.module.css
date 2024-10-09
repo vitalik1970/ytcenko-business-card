@@ -2,32 +2,32 @@
 .kingthings {
   font-family: "Kingthings Petrock", sans-serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Great+Vibes&family=Sofia+Sans+Extra+Condensed:wght@100;400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Great+Vibes&family=Sofia+Sans+Extra+Condensed:wght@100;400;700&display=swap');
 
 .sofia-sans-extra-condensed  {
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-}
+} */
 @font-face {
   font-family: "Sofia Sans Extra Condensed";
   src: url('/fonts/SofiaSansExtraCondensed-SemiBold.ttf') format('truetype');
   
 }
-@import url('/public/fonts/Caveat-VariableFont_wght.ttf');
+@import url('/fonts/Caveat-VariableFont_wght.ttf');
 
 .caveat {
   font-family: "Caveat", cursive;
   font-optical-sizing: auto;
  
 }
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Great+Vibes&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Great+Vibes&display=swap');
 .great-vibes-regular {
   font-family: "Great Vibes", cursive;
   font-weight: 400;
   font-style: normal;
-}
+} */
 .page {
   display: grid;
   grid-template-columns: 5fr 9fr 14fr 1fr;
@@ -38,7 +38,6 @@
 
 .main {
   padding: 15px 10px;
-  max-width: 650px;
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   font-size: 30px;
     /* letter-spacing: 1.1px; */
@@ -48,6 +47,7 @@
 .main p {
     text-align: center;
     line-height:28px;
+    font-size: clamp(1.625rem, 1.269rem + 0.67vw, 1.8rem);
 }
 
 .main_content{
@@ -113,7 +113,7 @@ font-size: 45px;
     background-color:rgb(249 250 251);
     border-radius: 8px;
     text-align: center;
-    font-size: 24px;
+    font-size: clamp(1.063rem, 0.439rem + 1.17vw, 1.5rem);
     margin-bottom: 10px;
     color: #747474;
     cursor: pointer;
@@ -338,7 +338,7 @@ font-size: 45px;
     grid-template-columns: 1fr;
     height: inherit;
    position: relative;
-
+ 
   }
   .nav {
     flex-direction: row;
@@ -347,7 +347,7 @@ font-size: 45px;
     height: max-content;
     margin-bottom: 20px;
     grid-row-start: 1;
-    padding-left: 7px;
+    padding-left: 13px;
     margin-right: 0;
     overflow-y: visible;
     border-top-left-radius: 10px;
@@ -373,8 +373,6 @@ font-size: 45px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 19px;
-    /* padding: 0 auto; */
-    /* margin: 20px auto 0 */
   }
 
   .hamburger_menu {
@@ -383,7 +381,7 @@ font-size: 45px;
     
    }
    .hamburger  {
-   margin-right: 10px;
+    margin-right: 20px;
    z-index: 1150;
    position: relative;
    }
@@ -410,7 +408,7 @@ font-size: 45px;
   .main_content {
     grid-row-start: 2;
     height: inherit;
-      padding: 0px 20px;
+  
   }
   .main {
     border-left: 2px solid rgb(47 111 235);
@@ -458,5 +456,25 @@ display: none;
 }
 .example {
 font-size: clamp(1rem, -0.5rem + 6.4vw, 1.5rem);
-}  
 } 
+.main p {
+  font-size: clamp(1.438rem, 1.067rem + 1.52vw, 1.875rem);
+} 
+} 
+@media (max-width: 700px) {
+  .nav {
+   border-radius: 0;
+   border-top-left-radius: 0;
+   border-bottom-left-radius: 0;  
+  }
+    .main  {
+    padding: 20px 10px; 
+    margin: 0 10px;
+    }
+
+}
+@media (max-width: 500px) {
+  .main h1 {
+  font-size: clamp(2.625rem, 1.671rem + 3.91vw, 3.75rem);
+}
+}

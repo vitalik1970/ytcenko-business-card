@@ -1,12 +1,12 @@
-@import url('/fonts/SofiaSansExtraCondensed-SemiBold.ttf');
+/* @import url('/fonts/SofiaSansExtraCondensed-SemiBold.ttf');
 .sofia-sans-extra-condensed  {
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
-}
-@import url('/fonts/PTSans-Regular.ttf');
-@import url('/fonts/Caveat-VariableFont_wght.ttf');
+} */
+/* @import url('/fonts/PTSans-Regular.ttf');
+@import url('/fonts/Caveat-VariableFont_wght.ttf'); */
 
 .details_container {
      padding: 20px 10px;
@@ -54,8 +54,8 @@ font-weight: 500;
    @media  (max-width: 850px) {
     .details_container {
      grid-row-start: 2;
-     max-height: 300px;
-     padding: 20px 30px;
+     max-height: 350px;
+     padding: 20px 20px;
      overflow-y: scroll;  
      scroll-behavior: smooth;
      border-left: 2px solid rgb(47 111 235);
@@ -75,3 +75,10 @@ font-weight: 500;
     background-color: #f1f1f1; 
   }
   }
+  @media  (max-width: 700px) {
+    .details_container {
+    padding: 20px 10px; 
+    margin: 0 10px;
+    }
+  }
+

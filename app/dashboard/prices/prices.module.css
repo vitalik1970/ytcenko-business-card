@@ -1,6 +1,5 @@
-@import url('/fonts/SofiaSansExtraCondensed-SemiBold.ttf');
-@import url('/fonts/PTSans-Regular.ttf');
-@import url('/fonts/Caveat-VariableFont_wght.ttf');
+/* @import url('/fonts/SofiaSansExtraCondensed-SemiBold.ttf'); */
+
 
 .prices_container{
      padding: 200px 20px;
@@ -42,5 +41,13 @@ font-style: italic;
      grid-row-start: 2;
      padding: 20px 50px;
      height: inherit;
+     /* border-left: 2px solid rgb(47 111 235);
+   border-right: 2px solid rgb(47 111 235); */
   }
   }
+  /* @media (max-width: 700px) {
+    .prices_container {
+      padding: 20px 5px; 
+      margin: 0 10px;
+      }
+    }  */

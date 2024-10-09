@@ -1,16 +1,16 @@
-@import url('/public/fonts/SofiaSansExtraCondensed-SemiBold.ttf');
+/* @import url('/public/fonts/SofiaSansExtraCondensed-SemiBold.ttf');
 .sofia-sans-extra-condensed  {
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
-}
-@import url('/public/fonts/PTSans-Regular.ttf');
-@import url('/public/fonts/Caveat-VariableFont_wght.ttf');
+} */
+/* @import url('/public/fonts/PTSans-Regular.ttf');
+@import url('/public/fonts/Caveat-VariableFont_wght.ttf'); */
 
 .blog_container {
-     padding: 20px 5px;
-    max-width: 650px;
+     padding: 20px 15px;
+    max-width: 665px;
     margin: 0px auto;
     background-attachment: fixed;  /* Параллакс-эффект */
   position: relative;
@@ -30,17 +30,20 @@ font-style: italic;
  
    
    font-family: "PT Sans", sans-serif;
-   font-size: 34px;
+   font-size: clamp(1.563rem, 0.85rem + 1.34vw, 2.063rem);
      letter-spacing: 1.1px;
      font-weight: 700;
-    
+     line-height: 35px;
  }
  
  @media  (max-width: 850px) {
   .blog_container {
    grid-row-start: 2;
    height: 350px;
-   padding: 20px 50px;
+   padding: 20px 20px;
+   /* max-width: 665px; */
+   border-left: 2px solid rgb(47 111 235);
+   border-right: 2px solid rgb(47 111 235);
 }
 .blog_container::-webkit-scrollbar {
   width: 8px;            
@@ -55,3 +58,9 @@ font-style: italic;
   background-color: #f1f1f1; 
 }
 }
+@media (max-width: 700px) {
+  .blog_container {
+    padding: 20px 10px; 
+    margin: 0 10px;
+    }
+  }   
