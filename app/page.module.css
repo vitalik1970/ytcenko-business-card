@@ -1,7 +1,4 @@
-@import url('/public/fonts/Kingthings_Petrock.ttf');
-.kingthings {
-  font-family: "Kingthings Petrock", sans-serif;
-}
+
 /* @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Great+Vibes&family=Sofia+Sans+Extra+Condensed:wght@100;400;700&display=swap');
 
 .sofia-sans-extra-condensed  {
@@ -13,14 +10,22 @@
 @font-face {
   font-family: "Sofia Sans Extra Condensed";
   src: url('/fonts/SofiaSansExtraCondensed-SemiBold.ttf') format('truetype');
-  
+  font-display: swap;
 }
-@import url('/fonts/Caveat-VariableFont_wght.ttf');
-
-.caveat {
+@font-face {
+  font-family: "Caveat";
+  src: url('/fonts/Caveat-VariableFont_wght.ttf') format('truetype');
+  font-display: swap;
+}
+/* .caveat {
   font-family: "Caveat", cursive;
   font-optical-sizing: auto;
- 
+  font-display: swap;
+} */
+@font-face {
+  font-family: "Kingthings Petrock", sans-serif;
+  src: url('/fonts/Kingthings_Petrock.ttf') format('truetype');
+  font-display: swap;
 }
 /* @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Great+Vibes&display=swap');
 .great-vibes-regular {
@@ -67,7 +72,6 @@ font-size: 45px;
 
 .main ol {
   margin: 15px 0 0 7px;
-  font-family: var(--font-geist-mono);
   padding-left: 0;
 }
 .main li {

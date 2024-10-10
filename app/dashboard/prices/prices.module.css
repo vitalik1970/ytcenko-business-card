@@ -14,7 +14,7 @@ font-style: italic;
     height: 100vh;
     overflow-x: visible; 
     overflow-y: auto;
-    z-index: -1;
+   
    
 }
 .prices_container h1{

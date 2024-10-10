@@ -1,12 +1,3 @@
-/* @import url('/public/fonts/SofiaSansExtraCondensed-SemiBold.ttf');
-.sofia-sans-extra-condensed  {
-  font-family: "Sofia Sans Extra Condensed", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-} */
-/* @import url('/public/fonts/PTSans-Regular.ttf');
-@import url('/public/fonts/Caveat-VariableFont_wght.ttf'); */
 
 .blog_container {
      padding: 20px 15px;
@@ -24,12 +15,8 @@ font-style: italic;
     overflow-y: auto;
     
 }
-.blog_container h1{
-   
+.blog_container h1{  
    text-align: center;
- 
-   
-   font-family: "PT Sans", sans-serif;
    font-size: clamp(1.563rem, 0.85rem + 1.34vw, 2.063rem);
      letter-spacing: 1.1px;
      font-weight: 700;

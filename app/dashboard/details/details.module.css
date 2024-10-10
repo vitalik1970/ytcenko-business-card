@@ -1,12 +1,3 @@
-/* @import url('/fonts/SofiaSansExtraCondensed-SemiBold.ttf');
-.sofia-sans-extra-condensed  {
-  font-family: "Sofia Sans Extra Condensed", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-} */
-/* @import url('/fonts/PTSans-Regular.ttf');
-@import url('/fonts/Caveat-VariableFont_wght.ttf'); */
 
 .details_container {
      padding: 20px 10px;
@@ -30,7 +21,7 @@ font-weight: 500;
    text-align: center;
  /* font-style: italic;  */
    
-   font-family: "Sofia Sans Extra Condensed", sans-serif!important;
+   font-family: "Sofia Sans Extra Condensed", sans-serif;
    font-size: 33px;
      letter-spacing: 1.1px;
      font-weight: 500;

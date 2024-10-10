@@ -15,7 +15,7 @@ font-style: italic;
     height: 100vh;
     overflow-x: visible; 
     overflow-y: auto;
-    z-index: -1;
+    
     
 }
 .bid_container h1{
@@ -29,12 +29,11 @@ font-style: italic;
      font-weight: 700;
     
  }
- .bid_container a {
-    /* margin-left: 5px; */
+ .bid_container p  a {
      display: inline-block;
     color: rgb(47 111 235);
     text-decoration: underline;
-
+    cursor: pointer;
   
   }
   @media  (max-width: 850px) {

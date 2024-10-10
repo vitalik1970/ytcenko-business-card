@@ -14,7 +14,7 @@
     height: 100vh;
     overflow-x: visible; 
     overflow-y: auto;
-    z-index: -1;
+     
 }
 .tel_container h1{
     display: block;
