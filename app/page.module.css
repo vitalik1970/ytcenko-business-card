@@ -23,7 +23,7 @@
   font-display: swap;
 } */
 @font-face {
-  font-family: "Kingthings Petrock", sans-serif;
+  font-family: "Kingthings Petrock";
   src: url('/fonts/Kingthings_Petrock.ttf') format('truetype');
   font-display: swap;
 }
@@ -106,13 +106,14 @@ font-size: 45px;
   
   }
   .examples {
+    font-family: "Kingthings Petrock";
     margin-left: 10px;
     margin-top: 20px;
     grid-column-start: 1;
   }
    
   .example {
-    font-family: "Kingthings Petrock", sans-serif;
+    font-family: "Kingthings Petrock";
    padding: 13px 10px;
     background-color:rgb(249 250 251);
     border-radius: 8px;
@@ -377,6 +378,7 @@ font-size: 45px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 19px;
+    font-family: "Kingthings Petrock";
   }
 
   .hamburger_menu {
