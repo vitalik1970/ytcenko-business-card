@@ -10,7 +10,7 @@ export default function Bid() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch('/api/route', {
+    const res = await fetch('/api/submitRequest', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -19,6 +19,7 @@ export default function Bid() {
     });
 
     const data = await res.json();
+    
 
     if (res.ok) {
       setResponseMessage('Заявка успешно отправлена!');
