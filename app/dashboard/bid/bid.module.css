@@ -3,7 +3,7 @@
 @import url('/fonts/Caveat-VariableFont_wght.ttf'); */
 
 .bid_container {
-     padding-top: 200px;
+  padding: 80px 15px 0;
     max-width: 600px;
     margin: 0px auto 0px;
     background-attachment: fixed;  
@@ -18,30 +18,94 @@ font-style: italic;
     
     
 }
-.bid_container h1{
+.bid_container h1 {
     display: block;
    text-align: center;
- 
-   
-   
+   margin-bottom: 15px;
    font-size: 33px;
      letter-spacing: 1.1px;
      font-weight: 700;
     
  }
- .bid_container p  a {
-     display: inline-block;
+ .bid_container p   {
+  display: block;
+     /* display: inline-block;
     color: rgb(47 111 235);
     text-decoration: underline;
-    cursor: pointer;
-  
+    cursor: pointer; */
+    margin-bottom: 15px;
   }
+  .feedbackform {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    width: clamp(23.125rem, 2.634rem + 38.53vw, 37.5rem);
+    background: #00000091;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+  .button__form:hover {  
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease; 
+  }
+  .feedback__form:hover {  
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease; 
+  } 
+  .inputField::placeholder {
+    color: #fff;
+  }
+  
+  .inputField::-webkit-input-placeholder {
+    color: #fff;
+  }
+  
+.feedback__form {
+    /* color: #5e5e5e; */
+    padding: 5px;
+    margin-top: 5px;
+    background: none;
+    border-bottom: 1px solid #fff !important;
+    resize: none;
+    border: none;
+    color: #fff;
+  }
+ 
+  .button__form {
+        padding: 0 22px;
+        color: #fff;
+        display: inline-block;
+        font-size: 13px;
+        line-height: 43px;
+        letter-spacing: 1.3px;
+        -webkit-border-radius: 22px;
+        border-radius: 22px;
+        border: 1px solid #fff;
+        max-width: 228px;
+        -webkit-transition: all .4s;
+        -o-transition: all .4s;
+        transition: all .4s;
+        cursor: pointer;
+        text-transform: uppercase;
+        background-color: transparent;
+        position: relative;
+        margin: 25px auto;
+  }
+  .button__form:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease; 
+  }
+
   @media  (max-width: 850px) {
     .bid_container {
      grid-row-start: 2;
      height: inherit;
-     padding: 20px 50px;
+     padding: 20px clamp(1.25rem, -0.34rem + 6.52vw, 3.125rem);
  }
+ .feedbackform {
+  width: clamp(21.875rem, 8.628rem + 54.35vw, 37.5rem);
+  width: 100%;
   }
-    
+}
+   
   
