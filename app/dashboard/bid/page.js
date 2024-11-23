@@ -6,7 +6,7 @@ import styles from "./bid.module.css";
 export default function Bid() {
   const [description, setDescription] = useState('');
   const [responseMessage, setResponseMessage] = useState('');
-
+  const [showResponseMessage, setShowResponseMessage] = useState(false);
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -23,6 +23,10 @@ export default function Bid() {
 
     if (res.ok) {
       setResponseMessage('Заявка успешно отправлена!');
+      setShowResponseMessage(true);
+      setTimeout(function() {
+        setShowResponseMessage(false)
+      }, 10000);
     } else {
       setResponseMessage(`Ошибка: ${data.error}`);
     }
@@ -45,7 +49,9 @@ export default function Bid() {
         className={`${styles.feedback__form} ${styles.inputField} `}
       />
       <button type="submit" className={styles.button__form }>Отправить заявку</button>
-      {responseMessage && <p>{responseMessage}</p>}
+      {showResponseMessage ?    
+      <p>   
+      {responseMessage}</p> : ''}
     </form>
     </div> 
   );

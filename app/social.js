@@ -38,8 +38,15 @@ export default function Social() {
           width={30}
           height={30}
         /></a>
+         <a  href="https://t.me/svytogorsk.online"><Image
+      className={styles.github}
+          src="/icons/telegram.svg"
+          alt="icon telegram"
+          width={50}
+          height={50}
+        /></a>
           </div>
-        // <div className={styles.social_mail}>
+        // <div className={styles.social_mail}> 
         // <a href="mailto:ytcenko1970@gmail.com">ytcenko1970@gmail.com</a>
         // </div>
       
