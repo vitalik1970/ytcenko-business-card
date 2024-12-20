@@ -40,7 +40,7 @@ export default function Bid() {
        <p>Оставьте свои пожелания и  контакты, и мы свяжемся с вами для консультации по выбору готового сайта, а также расскажем о возможностях его настройки под ваш бизнес!</p>
        <p>Или просто оставте ваш отзыв о сайте и наших услугах, ваше мнение очень важно для нас!</p>
      {/* <p>Извините, мы ещё работам над создание API для обработки данных на сервере, поэтому напишите нам пожалуйста на электронную почту   <a href="mailto:ytcenko1970@gmail.com">ytcenko1970@gmail.com</a> или позвоните по телефону<a href= 'tel:+380953945157' >+38 095 394 51 57</a>, или через социальные сети.<br/> Просим извинения за неудобства.</p> */}
-    <form onSubmit={handleSubmit} className={styles.feedbackform }>
+    <form onSubmit={handleSubmit} className={styles.feedbackform } data-netlify="true">
       <textarea
         value={description}
         onChange={(e) => setDescription(e.target.value)}
