@@ -58,7 +58,7 @@
 .main_content{
   margin: 0 auto;
   max-width: 665px;
-  z-index: -1;
+  /* z-index: -1; */
   perspective: 1px;
   height: 100vh;
   overflow-x: visible; 
