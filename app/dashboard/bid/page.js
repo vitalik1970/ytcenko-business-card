@@ -54,7 +54,7 @@ export default function Bid() {
       <p>   
       {responseMessage}</p> : ''}
     </form> */}
-    <form name="contact" method="POST" data-netlify="true" className={styles.feedbackform }  >
+    <form   method="POST"  className={styles.feedbackform }  >
       <textarea
         value={description}
         onChange={(e) => setDescription(e.target.value)}
