@@ -5,35 +5,35 @@ import styles from "./bid.module.css";
 
 export default function Bid() {
   const [description, setDescription] = useState('');
-  // const [responseMessage, setResponseMessage] = useState('');
-  // const [showResponseMessage, setShowResponseMessage] = useState(false);
+  const [responseMessage, setResponseMessage] = useState('');
+  const [showResponseMessage, setShowResponseMessage] = useState(false);
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  //   const res = await fetch('/api/submitRequest', {
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //     },
-  //     body: JSON.stringify({ description }),
-  //   });
+    const res = await fetch('/api/submitRequest', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ description }),
+    });
 
-  //   const data = await res.json();
-    
+    const data = await res.json();
+   console.log( data, 'data');
 
-  //   if (res.ok) {
-  //     setResponseMessage('Заявка успешно отправлена!');
-  //     setShowResponseMessage(true);
-  //     setTimeout(function() {
-  //       setShowResponseMessage(false)
-  //     }, 10000);
-  //   } else {
-  //     setResponseMessage(`Ошибка: ${data.error}`);
-  //   }
+    if (res.ok) {
+      setResponseMessage('Заявка успешно отправлена!');
+      setShowResponseMessage(true);
+      setTimeout(function() {
+        setShowResponseMessage(false)
+      }, 10000);
+    } else {
+      setResponseMessage(`Ошибка: ${data.error}`);
+    }
 
-  //   setDescription('');
-  // };
+    setDescription('');
+  };
 
   return (
     <div className={`${styles.bid_container} scrollable-block`}>
@@ -54,7 +54,7 @@ export default function Bid() {
       <p>   
       {responseMessage}</p> : ''}
     </form> */}
-    <form   method="POST"  className={styles.feedbackform }  >
+    <form   method="POST" onSubmit={handleSubmit}  className={styles.feedbackform }  >
       <textarea
         value={description}
         onChange={(e) => setDescription(e.target.value)}
@@ -63,29 +63,10 @@ export default function Bid() {
         className={`${styles.feedback__form} ${styles.inputField} `}
       />
       <button type="submit" className={styles.button__form }>Отправить заявку</button>
-      {/* {showResponseMessage ?    
+      {showResponseMessage ?    
       <p>   
-      {responseMessage}</p> : ''} */}
+      {responseMessage}</p> : ''}
     </form>
     </div> 
   );
 }
-
-
-
-// import styles from "./bid.module.css";
-
-
-// export default function Bid() { 
-
-//   return (  
-//     <div className={`${styles.bid_container} scrollable-block`}>
-//       <h1>Сайты на любой вкус!</h1>
-//      <p>Извините, мы ещё работам над создание API для обработки данных на сервере, поэтому напишите нам пожалуйста на электронную почту   <a href="mailto:ytcenko1970@gmail.com">ytcenko1970@gmail.com</a> или позвоните по телефону<a href= 'tel:+380953945157' >+38 095 394 51 57</a>, или через социальные сети.<br/> Просим извинения за неудобства.</p>
-         
-    
-      
-    
-//      </div> 
-//   );
-// }

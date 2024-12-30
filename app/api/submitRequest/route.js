@@ -33,6 +33,7 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 
 export async function POST(req) {
   const { description } = await req.json();
+  console.log(req, 'req');
 
   if (!description) {
     return new Response(JSON.stringify({ error: 'Description is required' }), { status: 400 });
