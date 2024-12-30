@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ready-site.vercel.app/sitemap.xml
+Sitemap: https://prodazhas.site/sitemap.xml
