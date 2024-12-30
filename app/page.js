@@ -3,7 +3,7 @@ import styles from "./page.module.css";
 export default function Home() { 
 
   return (
-        <div className={styles.main_content}>
+           <div className={`${styles.main_content} scrollable-block`}>
       <main className={styles.main}>
         <h1>Продажа готовых сайтов!</h1>
         <p>Написанными без всякого хлама, только чистый HTML, CSS, JavaScript, своеобразный хендмейд, существующий в единственном экземпляре, без всевозможных CMS.</p> 
