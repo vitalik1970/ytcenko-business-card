@@ -19,8 +19,8 @@ export default function RootLayout({ children }) {
         <meta property="og:title" content="Готовые сайты по доступным ценам | Визитки, блоги, лендинги" />
         <meta property="og:description" content="Продажа готовых сайтов для бизнеса и личных нужд: корпоративные сайты, сайты-визитки, блоги и лендинги. Гибкий подход к каждому клиенту. Яценко Виталий Викторович." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://ready-site.vercel.app" />
-        <meta property="og:image" content="https://ready-site.vercel.app/icons/favicon.png" />
+        <meta property="og:url" content="https://prodazhas.site/" />
+        <meta property="og:image" content="https://prodazhas.site/icons/favicon.png" />
         <meta property="og:locale" content="ru_RU" />
         <meta property="og:site_name" content="Готовые сайты Яценко Виталий Викторович" />
 
@@ -29,12 +29,11 @@ export default function RootLayout({ children }) {
         <meta name="twitter:site" content="@YcenkoVitalij" />
         <meta name="twitter:title" content="Готовые сайты по доступным ценам" />
         <meta name="twitter:description" content="Закажите готовый сайт у нас! Предлагаем: визитки, блоги, лендинги, корпоративные сайты и сайты для бизнесменов." />
-        <meta name="twitter:image" content="https://ready-site.vercel.app/icons/favicon.png" />
-
+        <meta name="twitter:image" content="https://prodazhas.site/icons/favicon.png" />
+        <meta name="google-site-verification" content="1IBkZQxzHq6yI5of7cqIYcvhUR2JY8y3GVcwn5LzW_c" />
         {/* Другие метаданные */}
         <meta name="googlebot" content="index, follow" />
-        <meta name="yandex-verification" content="7dd821d029628bf5" />
-        <meta name="google-site-verification" content="4qgwXJ8Au_8pw0iLmju1ouUbwas1O66ZhwYkgnAWzkA" />
+        <meta name="yandex-verification" content="25c34e2b353080af" />
         <meta name="rating" content="general" />
         <meta name="distribution" content="global" />
         <meta name="revisit-after" content="7 days" />
@@ -42,7 +41,7 @@ export default function RootLayout({ children }) {
         <meta name="coverage" content="Worldwide" />
 
         <link rel="icon" type="image/x-icon" href="/icons/favicon.png" />
-        <link rel="canonical" href="https://ready-site.vercel.app" />
+        <link rel="canonical" href="https://prodazhas.site/" />
       </head>
     
       <body>
